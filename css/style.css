@@ -122,8 +122,107 @@ nav {
     height: auto;
    
 }
+@media (max-width: 768px) {
+    .about-layout {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center-align content */
+        text-align: center;
+    }
+
+    .left-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 120px; /* Reduce size for mobile */
+        margin: 0 auto 1rem auto; /* Center it */
+    }
+
+    #about-paragraph {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0 1rem; /* Add some padding */
+    }
+
+    .right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .honeycomb-image {
+        max-width: 100%; /* Reduce size */
+        margin-top: 1rem;
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .project-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center align everything */
+        text-align: center;
+    }
+
+    .project img.project-image {
+        max-width: 90%;/* Make it responsive */
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem; /* Space between image and text */
+    }
+    .project-video{
+        width: 190px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .text-container {
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-buttons {
+        display: flex;
+        justify-content: center; /* Center buttons */
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .toggle-buttons button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
 
 
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements */
+        gap: 1.5rem; /* Add space between items */
+    }
+
+    .contact-item {
+        width: 100%;
+        text-align: center;
+    }
+}
 
     
 
@@ -174,7 +273,7 @@ nav {
     
 }
 .project-video {
-    max-width: 600px;
+    max-width: 650px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -302,7 +401,7 @@ footer {
     bottom: 0;
     background-color: yellow;
     border-radius: 50%;
-    animation: rise 5s linear forwards;
+    animation: rise 10s linear forwards;
 }
 
 @keyframes rise {
