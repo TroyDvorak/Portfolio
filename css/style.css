@@ -1,0 +1,495 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent width/height calculations */
+}
+
+html, body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d);
+    height: auto;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    overflow: visible;
+    z-index: -1;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centers navigation links */
+    gap: 3rem;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+.main-header {
+
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: black;
+    
+}
+/* About Section */
+#about {
+    margin-top: -5rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+    #about h1 {
+        
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: black;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+        color: #333;
+    }
+
+
+
+
+
+.bot-message, .user-message {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.user-message {
+    text-align: right;
+    color: cyan;
+}
+
+#chat-input {
+    margin-left: 5rem;
+    width: 50%;
+    padding: 20px; /* Increased padding to make it taller */
+    margin-top: 3rem;
+    border-radius: 25px;
+    background: rgba(34, 34, 34, 0.05); /* Gradient background */
+    text-align: center; /* Center text inside the input */
+    font-size: 1.2rem; /* Makes the text larger */
+    border: none; /* Removes default border */
+    outline: double; /* Removes focus outline */
+    color: black; /* Ensures text is readable */
+    font-weight: bold; /* Makes text bold */
+    
+}
+    #chat-input::placeholder {
+        color: darkgray; /* Makes placeholder text dark grey */
+        opacity: 1; /* Ensures full visibility */
+        font-weight: bold; /* Makes it stand out */
+        font-size: 1.5rem; /* Adjusts font size */
+    }
+
+button {
+    margin-left: 1rem;
+    background: linear-gradient(to right, red, orange);
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    background-color: #ff4500;
+    padding: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#chat-response {
+    max-width: 600px; /* Limits width */
+    height: 400px; /* Fixed height */
+    overflow-y: auto; /* Enables scrolling */
+    margin-top: 10px; /* Adds spacing below input */
+    
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: -20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+/* Prevent the page from shifting */
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+/* About Layout */
+.about-layout {
+    margin-top:1rem;
+    display: flex; /* Enables side-by-side layout */
+    justify-content: space-between; /* Positions left and right sections on opposite sides */
+    align-items: flex-start; /* Aligns items at the top */
+    max-width: 1200px; /* Limits the width of the layout */
+    margin: 0 auto; /* Centers the layout horizontally */
+    gap: 2rem; /* Adds space between the left and right sections */
+}
+
+/* Left Section (Profile Picture and Paragraph) */
+.left-section {
+    display: flex; /* Enables vertical stacking for the profile picture and paragraph */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-start; /* Aligns content to the left */
+    flex: 1; /* Takes up half of the space */
+    gap: 1rem; /* Adds space between the profile picture and the paragraph */
+}
+
+.profile-picture {
+    margin-top: 20rem;
+    margin-right: 45rem;
+    width: 150px; /* Size of the profile picture */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about-paragraph {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-align: center; /* Aligns text to the left */
+    color: white;
+    max-width: 550px;
+    margin-left: 6rem;
+}
+
+.right-section {
+    flex: 1; /* Honeycomb takes up remaining space */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.honeycomb-image {
+    margin-top: -28rem;
+    margin-right: -35rem;
+    
+    max-width: 900px;
+    height: auto;
+   
+}
+@media (max-width: 768px) {
+    .about-layout {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center-align content */
+        text-align: center;
+    }
+
+    .left-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 120px; /* Reduce size for mobile */
+        margin: 0 auto 1rem auto; /* Center it */
+    }
+
+    #about-paragraph {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0 1rem; /* Add some padding */
+    }
+
+    .right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .honeycomb-image {
+        max-width: 100%; /* Reduce size */
+        margin-top: 1rem;
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .project-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center align everything */
+        text-align: center;
+    }
+
+    .project img.project-image {
+        max-width: 90%;/* Make it responsive */
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem; /* Space between image and text */
+    }
+    .project-video{
+        width: 190px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .text-container {
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-buttons {
+        display: flex;
+        justify-content: center; /* Center buttons */
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .toggle-buttons button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements */
+        gap: 1.5rem; /* Add space between items */
+    }
+
+    .contact-item {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    
+
+/* Projects Section */
+#projects {
+    max-width: 100%;
+    position: sticky;
+    
+    
+}
+
+.section-title {
+    background: linear-gradient(to right, #ff7e5f, indianred);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6rem;
+    color: white;
+    width: 100%;
+}
+
+.project {
+    margin-bottom: 6rem;
+}
+
+.project-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    color: white;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 4fr 3fr; /* 1/3 image, 2/3 text */
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10rem;
+    z-index: 4;
+}
+
+.project img.project-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    z-index: 4;
+    
+}
+.project-video {
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 4rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .text-container p {
+        color: white;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+.toggle-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    z-index: 4;
+}
+
+    .toggle-buttons button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #333;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+        color: white;
+    }
+
+        .toggle-buttons button.active {
+            background-color: #333;
+            color: white;
+            outline: 2px solid white;
+        }
+
+        .toggle-buttons button:hover {
+            background-color: indianred;
+            
+        }
+
+/* Contact Section */
+#contact {
+    
+    text-align: center;
+    background-color: #444;
+    color: white;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-item {
+    flex: 1;
+    padding: 15px;
+}
+
+.contact-icon {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-item h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.contact-item p a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+    .contact-item p a:hover {
+        color: blue;
+    }
+
+html {
+    -webkit-text-size-adjust: none; /* Stops automatic text resizing */
+    text-size-adjust: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Fire Effect */
+#fire-effect {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ash {
+    position: absolute;
+    bottom: 0;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: rise 10s linear forwards;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-200px) scale(1);
+        opacity: 0;
+    }
+}
