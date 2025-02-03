@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <title>Troy Dvorak - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+    <div id="fire-effect"></div>
+
+    <header>
+        <nav>
+            <a href="#aboutjump">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1 class="main-header">Hello, I'm <span class="highlight" style="color: red;">Troy</span>.</h1>
+        <h1 class="main-header">An Aspiring Software Engineer.</h1>
+        <h1 class="main-header">Ask Me Anything.</h1>
+
+        <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Send a message...">
+            <button type="submit">Send</button>
+        </form>
+
+       
+        <div id="chat-response"></div>
+
+        <div class="about-container" id="aboutjump">
+            <div class="about-content">
+                <img src="assets/personbackground.png" alt="Troy Dvorak" class="profile-picture">
+                <p id="about-paragraph" style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;">
+                    I'm a Software Engineer driven by a passion for problem-solving and continuous learning. With expertise in Java and Python, I craft clean, efficient code to build innovative solutions. Always eager to explore new technologies and tackle complex challenges, I push the boundaries of what's possible in software development.
+                </p>
+                <img src="assets/honeycomb.png" alt="Honeycomb Design" class="honeycomb-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Digital Timecard Project -->
+        <div class="project">
+            <h3 class="project-title">Digital Timecard</h3>
+            <div class="project-content">
+                <img src="assets/TimeCardAPP.png" alt="Timecard App Project Picture" class="project-image">
+                <div class="text-container">
+                    <p id="digital-timecard-text">
+                        Designed, tested, and implemented a digital timecard system to replace the outdated paper-based system for a construction employer. By integrating Twilio for reporting hours via WhatsApp, I automated time entry and streamlined operational efficiency using Microsoft Excel. The new system saved employees over five hours per week through automation, significantly enhancing overall productivity and operational workflows.
+                    </p>
+                    <div class="toggle-buttons">
+                        <button id="digital-description-btn" class="active">Description</button>
+                        <button id="digital-challenges-btn">Challenges</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bald Man Go! Project -->
+        <div class="project">
+            <h3 class="project-title">Bald Man Go!</h3>
+            <div class="project-content">
+                <video class="project-video" autoplay loop muted>
+                    <source src="assets/BaldManGo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text-container">
+                    <p id="bald-man-go-text">
+                        This fast-paced 2D platformer challenges players to keep up with an ever-accelerating camera, pushing their reflexes
+                        and decision-making skills to the limit. A key innovation in my design is the inclusion of three distinct routes within
+                        each level-the main ground path, an upper route, and a lower route-each presenting unique obstacles and gameplay dynamics.
+                        Players must strategically equip abilities to overcome the challenges specific to their chosen path, offering a
+                        highly customizable and replayable experience. Success in each level depends on the right combination of skill, ability selection,
+                        and route choice, ensuring a rewarding challenge for players of all styles.
+                    </p>
+                    <div class="toggle-buttons">
+                        <button id="bald-description-btn" class="active">Description</button>
+                        <button id="bald-challenges-btn">Challenges</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Electronic Snowmobile Throttle</h3>
+            <div class="project-content">
+                <video class="project-video" autoplay loop muted>
+                    <source src="assets/electronicthrottle.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text-container">
+                    <p id="snowmobile-description">
+                        During this project, I collaborated with an electrical engineer to develop and implement an electronic
+                        throttle system for the SAE Snow Team. Our design enabled remote RPM control, integrated cruise control
+                        functionality, and introduced a launch control feature. By eliminating manual throttle input, the system
+                        ensured completely unbiased testing conditions, allowing for precise data collection and performance evaluation.
+                        This innovation enhanced testing accuracy, efficiency, and repeatability, contributing to the team's overall
+                        optimization efforts.
+                    </p>
+                    <div class="toggle-buttons">
+                        <button id="throttle-description-btn" class="active">Description</button>
+                        <button id="throttle-challenges-btn">Challenges</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Portfolio Website</h3>
+            <div class="project-content">
+                <img src="assets/website.png" alt="Portfolio Website Project Picture" class="project-image" style="margin-left: 2rem">
+                <div class="text-container">
+                    <p id="portfolio-website-text" >
+                        I designed, developed, and deployed a custom portfolio website to showcase my projects and skills. This project was an excellent opportunity to deepen my knowledge of JavaScript, HTML, and CSS. Additionally, I integrated my own GPT model into the site, allowing visitors to interact with AI, demonstrating my ability to leverage artificial intelligence in software development.
+                        <div class="toggle-buttons">
+                            <button id="portfolio-description-btn" class="active">Description</button>
+                            <button id="portfolio-challenges-btn">Challenges</button>
+                        </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <!-- Email Section -->
+            <div class="contact-item">
+                <img src="assets/email-icon.png" alt="Email Icon" class="contact-icon">
+                <h3>Email</h3>
+                <p><a href="troydvoraktd@gmail.com">troydvoraktd@gmail.com</a></p>
+            </div>
+
+            <!-- Phone Number Section -->
+            <div class="contact-item">
+                <img src="assets/phone-icon.png" alt="Phone Icon" class="contact-icon">
+                <h3>Phone</h3>
+                <p><a href="tel:+7153389364">(715) 338-9364</a></p>
+            </div>
+
+            <!-- LinkedIn Section -->
+            <div class="contact-item">
+                <img src="assets/linkedin-icon.png" alt="LinkedIn Icon" class="contact-icon">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/troydvorak" target="_blank">linkedin.com/in/troydvorak</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Troy Dvorak All rights reserved.</p>
+    </footer>
+</body>
+</html>
