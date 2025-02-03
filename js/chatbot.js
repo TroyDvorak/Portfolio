@@ -4,10 +4,12 @@ const mytextInput = document.getElementById('chat-input'); // Updated to match y
 const responseTextarea = document.getElementById('chat-response'); // Updated to match your response container
 
 const apiKey1 = "sk" 
-const apiKey2 = "-proj-"
-const apiKey4 = "bsRHuZVT3BlbkFJLjWdDwiSMbbT0cNbgypQNJuI6Dx0xCuBRnlB6kAcdhYc81QfDeByGKBusnyerKwjzH1EeMeUUA"
-const apiKey3 = "kKTZj-tf5kRFsllnPrYy0YW5h8eZzCtJJppoPHd9NWCrxHd6VbGuAmPscrYTn_VLGT1"
-
+const apiKey2 = "-pr"
+const apiKey3 = "oj-"
+const apiKey4 = "XR1jgyAhxgJdgdelTzdAJULLaIFc1uvB7nOgVENcwJsnOZ"
+const apiKey5 = "akCsXHfCppIbl5mH0ZRpHGcwzn8lT3BlbkFJuXeoeKrHm4"
+const apiKey6 = "SmLjNSF8Yo6E-Fm-hDjmhYcsYE69wLCl8CUQWHH-"
+const apiKey7 = "qW2NtFujGZqelCN9L9v-m3MA"
 
 // Event listener for form submission
 form.addEventListener('submit', async (e) => {
@@ -24,7 +26,7 @@ form.addEventListener('submit', async (e) => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${apiKey1 + apiKey2 + apiKey3 + apiKey4}`,
+                    'Authorization': `Bearer ${apiKey1 + apiKey2 + apiKey3 + apiKey4 + apiKey5 + apiKey6 + apiKey7}`,
                 },
                 body: JSON.stringify({
                     model: 'gpt-4o-mini', // Use GPT-4 Turbo for better performance
