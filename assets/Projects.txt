@@ -1,9 +1,0 @@
-Projects include (from most recent to oldest):
-
-I developed a 2D platformer in Unity featuring three distinct routes per level, each presenting unique challenges. To progress, players must equip one of many unique skills, enhancing replay ability and creating a dynamic, engaging experience. Throughout the project, I learned Unity from the ground up, covering sprite creation, animation, physics, and component scripting to bring the game to life.
-
-I developed a prototype match predictor for Premier League games that leverages dozens of algorithms to generate accurate predictions. It analyzes factors such as past wins and losses, recent form, team chemistry, and other key performance metrics to determine match outcomes. This system enhances predictive accuracy by integrating multiple data-driven approaches.
-
-I designed a timecard automation program for my former boss in the pole barn construction industry. Using Python, I developed a system that enables employees to submit their start time, end time, and job name via text message to a designated phone number. The program automatically processes the data, calculates hours worked, and imports it into an Excel sheet. It also organizes hours by employee and flags any outliers, streamlining time tracking and reducing manual errors.
-
-I worked with an electrical engineer on designing, creating, and implementing a remote throttle system for the SAE club. I handled the software and helped out with the electrics. The final product had cruise control capabilities, remote-control throttle, and launch control. It is implemented in their motor that they're working on.
