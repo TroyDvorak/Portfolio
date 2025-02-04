@@ -124,7 +124,7 @@ button {
     height: 400px; /* Fixed height */
     overflow-y: auto; /* Enables scrolling */
     margin-top: 10px; /* Adds spacing below input */
-    
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
     padding: 10px;
     font-family: Arial, sans-serif;
     border-radius: 10px;
@@ -149,9 +149,10 @@ button {
 
 /* About Layout */
 .about-layout {
-    margin-top:1rem;
+    margin-top: 1rem;
     display: flex; /* Enables side-by-side layout */
-    justify-content: space-between; /* Positions left and right sections on opposite sides */
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start; /* Aligns items at the top */
     max-width: 1200px; /* Limits the width of the layout */
     margin: 0 auto; /* Centers the layout horizontally */
@@ -169,19 +170,19 @@ button {
 
 .profile-picture {
     margin-top: 20rem;
-    margin-right: 72rem;
-    width: 150px; /* Size of the profile picture */
+    margin-right: 70rem;
+    width: 175px; /* Size of the profile picture */
     height: auto;
     border-radius: 50%; /* Makes the image circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 #about-paragraph {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     text-align: center; /* Aligns text to the left */
     color: white;
-    max-width: 550px;
+    max-width: 700px;
     margin-left: 6rem;
 }
 
@@ -193,14 +194,14 @@ button {
 }
 
 .honeycomb-image {
-    margin-top: -28rem;
-    margin-right: -35rem;
+    margin-top: -32rem;
+    margin-right: -40rem;
     
-    max-width: 900px;
+    max-width: 70%;
     height: auto;
    
 }
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .about-layout {
         flex-direction: column; /* Stack sections vertically */
         align-items: center; /* Center-align content */
@@ -210,6 +211,7 @@ button {
     .left-section {
         width: 100%;
         text-align: center;
+        flex: 1 0 100%;
     }
 
     .profile-picture {
@@ -226,6 +228,7 @@ button {
     .right-section {
         width: 100%;
         text-align: center;
+        flex: 1 0 100%
     }
 
     .honeycomb-image {
@@ -235,7 +238,7 @@ button {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .project {
         text-align: center;
         margin-bottom: 4rem;
@@ -254,17 +257,11 @@ button {
         text-align: center;
     }
 
-    .project img.project-image {
-        max-width: 90%;/* Make it responsive */
+    .project img.project-image, .project-video {
+        max-width: 90%; /* Responsive image/video */
         height: auto;
         border-radius: 10px;
-        margin-bottom: 1rem; /* Space between image and text */
-    }
-    .project-video{
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 1rem;
+        margin: 0 auto; /* Center image/video */
     }
 
     .text-container {
@@ -291,7 +288,7 @@ button {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .contact-container {
         flex-direction: column; /* Stack elements */
         gap: 1.5rem; /* Add space between items */
@@ -344,20 +341,13 @@ button {
     z-index: 4;
 }
 
-.project img.project-image {
-    width: 100%;
-    max-width: 800px;
+.project img.project-image, .project-video {
+    flex: 1 0 45%;
+    max-width: 90%; /* Responsive image/video */
     height: auto;
     border-radius: 10px;
+    margin: 0 auto; /* Center image/video */
     z-index: 4;
-    
-}
-.project-video {
-    max-width: 650px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 4rem;
 }
 
 .text-container {

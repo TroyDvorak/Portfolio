@@ -75,12 +75,12 @@ setupToggleButtons(
     'bald-description-btn',
     'bald-challenges-btn',
     `This fast-paced 2D platformer challenges players to keep up with an ever-accelerating camera, pushing their reflexes and decision-making skills to the limit. 
-    A key innovation in my design is the inclusion of three distinct routes within each level—the main ground path, an upper route, and a lower route—each presenting 
+    A key innovation in my design is the inclusion of three distinct routes within each level-the main ground path, an upper route, and a lower route-each presenting 
     unique obstacles and gameplay dynamics. Players must strategically equip abilities to overcome the challenges specific to their chosen path, offering a highly 
     customizable and replayable experience. Success in each level depends on the right combination of skill, ability selection, and route choice, ensuring a rewarding 
     challenge for players of all styles.`,
     `The primary challenges I faced while developing this game stemmed from my learning experience with Unity. I had to teach myself how to work with sprites, including 
-    creating and animating them effectively. Additionally, I had to gain a deep understanding of Unity’s components and how to control them through scripting. Another 
+    creating and animating them effectively. Additionally, I had to gain a deep understanding of Unity's components and how to control them through scripting. Another 
     significant hurdle was implementing physics systems that accurately supported different movement styles, abilities, and interactions with enemies, ensuring smooth 
     and responsive gameplay. Overcoming these challenges not only strengthened my technical skills but also deepened my understanding of game development principles.`
 );
@@ -93,7 +93,7 @@ setupToggleButtons(
     `During this project, I collaborated with an electrical engineer to develop and implement an electronic throttle system for the SAE Snow Team. 
     Our design enabled remote RPM control, integrated cruise control functionality, and introduced a launch control feature. By eliminating manual 
     throttle input, the system ensured completely unbiased testing conditions, allowing for precise data collection and performance evaluation. 
-    This innovation enhanced testing accuracy, efficiency, and repeatability, contributing to the team’s overall optimization efforts.`,
+    This innovation enhanced testing accuracy, efficiency, and repeatability, contributing to the team's overall optimization efforts.`,
     `The biggest challenge was collaborating with a cross-functional team and learning key electrical engineering principles. It took time
     to align our understanding, but through strong communication and problem-solving, we successfully developed the electronic throttle system.`
 );
