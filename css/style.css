@@ -25,6 +25,7 @@ header {
     top: 0;
     z-index: 10;
     margin-bottom: 15rem;
+    word-spacing: 4rem;
 }
 
 nav {
@@ -34,9 +35,11 @@ nav {
 }
 
     nav a {
+        margin-left: 4rem;
+        margin-right: 4rem;
         color: white;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 2rem;
         transition: color 0.3s;
     }
 
@@ -108,7 +111,7 @@ nav {
 
 button {
     margin-left: 1rem;
-    background: linear-gradient(to right, #6D017D,#9704AD );
+    background: linear-gradient(to bottom, #43034D, #45478D );
     font-family: Arial, sans-serif;
     font-size: 1.5rem;
     background-color: #ff4500;
@@ -118,6 +121,7 @@ button {
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
+    outline: 2px solid white;
 }
 #chat-response {
     max-width: 600px; /* Limits width */
@@ -314,15 +318,16 @@ button {
 }
 
 .section-title {
-    background: linear-gradient(to bottom, #805D85, #3F0248 );
-    font-size: 2.5rem;
+    outline: black;
+    background: linear-gradient(to bottom, #43034D, #45478D );
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 6rem;
     color: white;
     width: 100%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .project {
